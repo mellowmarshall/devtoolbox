@@ -47,6 +47,10 @@ Deep-dive cheatsheets for professional developers:
 - 🔍 [Regex Mastery Cheatsheet](https://devtoolsmarket.gumroad.com/l/nyvve) — Patterns & recipes ($3.99)
 - 🐧 [Linux CLI Essential Reference](https://devtoolsmarket.gumroad.com/l/ibghuk) — 150+ commands ($4.99)
 - 💻 [VS Code Productivity Guide](https://devtoolsmarket.gumroad.com/l/cdisfr) — Shortcuts & extensions ($3.99)
+- 🐚 [Shell Scripting Cookbook](https://devtoolsmarket.gumroad.com/l/xhnig) — 50+ Bash recipes ($4.99) **NEW**
+- 🔗 [API Design Patterns Guide](https://devtoolsmarket.gumroad.com/l/jgfqpt) — REST, GraphQL & beyond ($4.99) **NEW**
+- 🗃️ [SQL Query Optimization Guide](https://devtoolsmarket.gumroad.com/l/tomnbho) — PostgreSQL & MySQL ($3.99) **NEW**
+- 🐍 [Python One-Liners Reference](https://devtoolsmarket.gumroad.com/l/ibijr) — 100+ snippets ($2.99) **NEW**
 
 Browse all: [devtoolsmarket.gumroad.com](https://devtoolsmarket.gumroad.com)
 
