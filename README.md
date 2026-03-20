@@ -1,58 +1,61 @@
-# 🔧 DevToolbox — Free Online Developer Utilities
+# 🔧 DevToolbox — Free Online Developer Tools
 
-**20+ free online developer tools** — JSON formatter, Base64 encoder, UUID generator, hash generator, regex tester, and more. All running in your browser with zero signup.
+**20+ free developer tools that run entirely in your browser. No signup. No tracking. No ads.**
 
-🌐 **[Use it now → mellowmarshall.github.io/devtoolbox](https://mellowmarshall.github.io/devtoolbox/)**
-
-🛒 **[Premium Cheatsheets → devtoolsmarket.gumroad.com](https://devtoolsmarket.gumroad.com)**
+🌐 **Live at:** [mellowmarshall.github.io/devtoolbox](https://mellowmarshall.github.io/devtoolbox/)
 
 ## Tools Included
 
-| Category | Tools |
-|----------|-------|
-| **Data** | JSON Formatter & Validator, CSV ↔ JSON Converter |
-| **Encoding** | Base64 Encoder/Decoder, URL Encoder/Decoder, HTML Entity Encoder/Decoder |
-| **Generators** | UUID Generator, Password Generator, Lorem Ipsum Generator, QR Code Generator |
-| **Crypto** | SHA-1/256/384/512 Hash Generator |
-| **Web** | JWT Decoder, Regex Tester, Cron Expression Parser |
-| **Text** | Text Diff, Character & Word Counter, Markdown Preview |
-| **Code** | JavaScript Minifier, SQL Formatter |
-| **Design** | Color Converter (HEX/RGB/HSL) |
-| **Time** | Unix Timestamp Converter |
+| Tool | Description |
+|------|-------------|
+| JSON Formatter | Format, validate, and minify JSON |
+| Base64 Encoder/Decoder | Encode and decode Base64 strings |
+| URL Encoder/Decoder | Encode and decode URL components |
+| UUID Generator | Generate random UUIDs (v4) |
+| Hash Generator | SHA-1, SHA-256, SHA-384, SHA-512 |
+| JWT Decoder | Decode and inspect JSON Web Tokens |
+| Regex Tester | Test patterns with live matching |
+| Color Converter | Convert between HEX, RGB, HSL |
+| Unix Timestamp | Convert timestamps to dates and back |
+| Text Diff | Compare two texts side by side |
+| Lorem Ipsum | Generate placeholder text |
+| Markdown Preview | Live markdown rendering |
+| HTML Entities | Encode/decode HTML entities |
+| CSV ↔ JSON | Convert between CSV and JSON |
+| QR Generator | Generate QR codes from text |
+| Cron Parser | Parse and explain cron expressions |
+| Password Generator | Secure random password generation |
+| Character Counter | Count chars, words, lines, bytes |
+| JS Minifier | Basic JavaScript minification |
+| SQL Formatter | Format SQL queries |
 
-## Why DevToolbox?
+## Features
 
-- **100% client-side** — your data never leaves your browser
-- **No dependencies** — single HTML file, instant load
-- **No signup** — just open and use
-- **Mobile-friendly** — works on any device
-- **Dark mode** — easy on the eyes
-- **Free forever** — no ads, no tracking, no BS
+- ⚡ **Instant** — No loading, no server calls
+- 🔒 **Private** — Everything runs client-side, nothing leaves your browser
+- 📱 **Responsive** — Works on desktop and mobile
+- 🌙 **Dark mode** — Easy on the eyes
+- 🆓 **Free forever** — No signup, no limits
 
-## ⚡ Premium Developer Resources
+## Premium Resources
 
-Level up with our battle-tested cheatsheets — instant PDF download:
+Deep-dive cheatsheets for professional developers:
 
-| Resource | What's Inside | Get It |
-|----------|---------------|--------|
-| **Prompt Engineering Mega Pack** | 50+ prompt patterns for GPT-4, Claude & more | [$4.99 on Gumroad](https://devtoolsmarket.gumroad.com/l/zouqa) |
-| **Git Power User Cheatsheet** | Advanced workflows, rebasing, recovery & aliases | [$3.99 on Gumroad](https://devtoolsmarket.gumroad.com/l/kftdym) |
-| **Docker Compose Cheatsheet** | Production patterns, networking & debugging | [$2.99 on Gumroad](https://devtoolsmarket.gumroad.com/l/brpdb) |
+- 🧠 [Prompt Engineering Mega Pack](https://devtoolsmarket.gumroad.com/l/zouqa) — 50+ battle-tested prompt templates ($4.99)
+- 🔀 [Git Power User Cheatsheet](https://devtoolsmarket.gumroad.com/l/kftdym) — Advanced workflows & recovery ($3.99)
+- 🐳 [Docker Compose Cheatsheet](https://devtoolsmarket.gumroad.com/l/brpdb) — Production-ready patterns ($2.99)
+- 🔍 [Regex Mastery Cheatsheet](https://devtoolsmarket.gumroad.com/l/nyvve) — Patterns & recipes ($3.99)
+- 🐧 [Linux CLI Essential Reference](https://devtoolsmarket.gumroad.com/l/ibghuk) — 150+ commands ($4.99)
+- 💻 [VS Code Productivity Guide](https://devtoolsmarket.gumroad.com/l/cdisfr) — Shortcuts & extensions ($3.99)
 
-[Browse all products →](https://devtoolsmarket.gumroad.com)
+Browse all: [devtoolsmarket.gumroad.com](https://devtoolsmarket.gumroad.com)
 
-## Self-Host
+## Tech Stack
 
-It's a single HTML file. Clone this repo or download `index.html` and open it anywhere:
-
-```bash
-git clone https://github.com/mellowmarshall/devtoolbox.git
-open devtoolbox/index.html
-```
-
-## Keywords
-
-`developer tools` `json formatter online` `base64 encoder` `uuid generator` `hash generator` `jwt decoder` `regex tester` `cron parser` `url encoder` `password generator` `qr code generator` `text diff` `sql formatter` `javascript minifier` `color converter` `unix timestamp converter` `free dev tools` `online developer utilities`
+- Pure HTML/CSS/JavaScript
+- No frameworks, no dependencies
+- Hosted on GitHub Pages
+- < 50KB total page weight
 
 ## License
 
@@ -60,4 +63,4 @@ MIT — use it however you want.
 
 ---
 
-Made by [mellowmarshall](https://github.com/mellowmarshall) · [Free Tools](https://mellowmarshall.github.io/devtoolbox/) · [Premium Resources](https://devtoolsmarket.gumroad.com)
+Made by [@mellowmarshall](https://github.com/mellowmarshall)
