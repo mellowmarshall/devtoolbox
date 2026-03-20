@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevToolbox Store — Premium Developer Resources</title>
+<meta name="description" content="Premium developer cheatsheets, prompt packs, and productivity tools. Instantly downloadable PDFs and bundles for developers.">
+<meta name="keywords" content="developer cheatsheet, git cheatsheet, docker cheatsheet, prompt engineering, developer tools, coding resources">
+<meta property="og:title" content="DevToolbox Store — Premium Developer Resources">
+<meta property="og:description" content="Battle-tested cheatsheets and tools for professional developers. From $3.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f1117;--surface:#1a1d27;--card:#1e2130;--border:#2a2d3a;--text:#e4e4e7;--muted:#9ca3af;--accent:#6366f1;--accent2:#818cf8;--green:#22c55e;--orange:#f59e0b;--radius:12px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+
+/* Header */
+.header{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#13151f 0%,var(--bg) 100%)}
+.header h1{font-size:2.2rem;background:linear-gradient(135deg,var(--accent),var(--accent2),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
+.header p{color:var(--muted);font-size:1.1rem;max-width:600px;margin:0 auto}
+.header .badge{display:inline-block;background:var(--green);color:#000;font-size:.75rem;font-weight:700;padding:.2rem .6rem;border-radius:20px;margin-bottom:1rem;text-transform:uppercase;letter-spacing:.05em}
+.nav-links{display:flex;gap:1rem;justify-content:center;margin-top:1.5rem}
+.nav-links a{color:var(--accent2);text-decoration:none;font-size:.9rem;padding:.4rem .8rem;border:1px solid var(--border);border-radius:var(--radius);transition:all .2s}
+.nav-links a:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* Products Grid */
+.products{max-width:1100px;margin:2rem auto;padding:0 1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.5rem}
+
+/* Product Card */
+.product-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:transform .2s,box-shadow .2s}
+.product-card:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(99,102,241,.15)}
+.product-img{height:200px;background:linear-gradient(135deg,#1e1b4b,#312e81);display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative}
+.product-img .tag{position:absolute;top:12px;right:12px;background:var(--orange);color:#000;font-size:.7rem;font-weight:700;padding:.2rem .5rem;border-radius:6px;text-transform:uppercase}
+.product-body{padding:1.2rem}
+.product-body h3{font-size:1.2rem;margin-bottom:.4rem}
+.product-body .subtitle{color:var(--muted);font-size:.85rem;margin-bottom:.8rem}
+.product-body .desc{color:var(--muted);font-size:.9rem;margin-bottom:1rem;line-height:1.5}
+.product-body .features{list-style:none;margin-bottom:1rem}
+.product-body .features li{color:var(--text);font-size:.85rem;padding:.2rem 0;padding-left:1.4rem;position:relative}
+.product-body .features li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:bold}
+.product-footer{display:flex;align-items:center;justify-content:space-between;padding:0 1.2rem 1.2rem}
+.price{font-size:1.5rem;font-weight:700;color:var(--green)}
+.price .original{font-size:.9rem;color:var(--muted);text-decoration:line-through;margin-right:.3rem;font-weight:400}
+.buy-btn{display:inline-block;background:var(--accent);color:#fff;border:none;padding:.6rem 1.5rem;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;text-decoration:none;transition:background .2s}
+.buy-btn:hover{background:var(--accent2)}
+
+/* Bundle Section */
+.bundle{max-width:1100px;margin:2rem auto;padding:0 1rem}
+.bundle-card{background:linear-gradient(135deg,#1e1b4b,#312e81);border:2px solid var(--accent);border-radius:var(--radius);padding:2rem;text-align:center;position:relative;overflow:hidden}
+.bundle-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(99,102,241,.1) 0%,transparent 70%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+.bundle-card h2{font-size:1.6rem;margin-bottom:.5rem;position:relative}
+.bundle-card p{color:var(--muted);margin-bottom:1rem;position:relative}
+.bundle-card .bundle-price{font-size:2rem;font-weight:700;color:var(--green);margin-bottom:1rem;position:relative}
+.bundle-card .bundle-price .save{display:block;font-size:.85rem;color:var(--orange);font-weight:400}
+
+/* Preview Section */
+.preview-section{max-width:1100px;margin:3rem auto;padding:0 1rem}
+.preview-section h2{text-align:center;font-size:1.5rem;margin-bottom:1.5rem;color:var(--accent2)}
+.preview-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem}
+.preview-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem}
+.preview-item h4{color:var(--accent2);margin-bottom:.5rem;font-size:.95rem}
+.preview-item pre{background:var(--bg);padding:.8rem;border-radius:6px;font-size:.78rem;overflow-x:auto;color:var(--muted);line-height:1.4}
+
+/* Testimonials */
+.social-proof{max-width:800px;margin:3rem auto;padding:0 1rem;text-align:center}
+.social-proof h2{font-size:1.3rem;color:var(--accent2);margin-bottom:1rem}
+.stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap}
+.stat{text-align:center}
+.stat .num{font-size:2rem;font-weight:700;color:var(--accent)}
+.stat .label{color:var(--muted);font-size:.85rem}
+
+/* Footer */
+.footer{text-align:center;padding:2rem 1rem;border-top:1px solid var(--border);margin-top:3rem;color:var(--muted);font-size:.85rem}
+.footer a{color:var(--accent2);text-decoration:none}
+
+@media(max-width:768px){
+  .products{grid-template-columns:1fr}
+  .header h1{font-size:1.6rem}
+  .stats{gap:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="badge">🔥 New Products</div>
+  <h1>DevToolbox Store</h1>
+  <p>Premium developer resources. Battle-tested cheatsheets, prompt packs, and productivity tools. Instant PDF download.</p>
+  <div class="nav-links">
+    <a href="index.html">← Free Tools</a>
+    <a href="https://devtoolsmarket.gumroad.com" target="_blank">Gumroad Store →</a>
+  </div>
+</div>
+
+<div class="products">
+
+  <!-- Product 1: Git Cheatsheet -->
+  <div class="product-card">
+    <div class="product-img" style="background:linear-gradient(135deg,#7c2d12,#ea580c)">
+      📋
+      <div class="tag">Bestseller</div>
+    </div>
+    <div class="product-body">
+      <h3>Git Power User Cheatsheet</h3>
+      <div class="subtitle">50+ commands, workflows & tricks</div>
+      <div class="desc">Everything from undo & recovery to interactive rebase mastery, stash techniques, search forensics, and power .gitconfig settings. Pin it next to your monitor.</div>
+      <ul class="features">
+        <li>Undo & recovery patterns</li>
+        <li>Interactive rebase mastery</li>
+        <li>Search & forensics commands</li>
+        <li>Time-saving aliases & config</li>
+        <li>Printable PDF format</li>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <div class="price">$3</div>
+      <a class="buy-btn gumroad-button" href="https://devtoolsmarket.gumroad.com/l/git-cheatsheet" data-gumroad-overlay-checkout="true">Get It →</a>
+    </div>
+  </div>
+
+  <!-- Product 2: Docker Cheatsheet -->
+  <div class="product-card">
+    <div class="product-img" style="background:linear-gradient(135deg,#0c4a6e,#0284c7)">
+      🐳
+      <div class="tag">New</div>
+    </div>
+    <div class="product-body">
+      <h3>Docker & Compose Cheatsheet</h3>
+      <div class="subtitle">Production-ready commands & templates</div>
+      <div class="desc">Container lifecycle, image management, networking, Compose essentials, production templates, debugging tricks, and security best practices. All in one PDF.</div>
+      <ul class="features">
+        <li>Container lifecycle commands</li>
+        <li>Multi-stage build patterns</li>
+        <li>Production Compose templates</li>
+        <li>Security hardening guide</li>
+        <li>Debugging & performance tips</li>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <div class="price">$3</div>
+      <a class="buy-btn gumroad-button" href="https://devtoolsmarket.gumroad.com/l/docker-cheatsheet" data-gumroad-overlay-checkout="true">Get It →</a>
+    </div>
+  </div>
+
+  <!-- Product 3: Prompt Engineering Pack -->
+  <div class="product-card">
+    <div class="product-img" style="background:linear-gradient(135deg,#4c1d95,#7c3aed)">
+      🧠
+      <div class="tag">Popular</div>
+    </div>
+    <div class="product-body">
+      <h3>Prompt Engineering Mega-Pack</h3>
+      <div class="subtitle">100+ battle-tested prompts for devs</div>
+      <div class="desc">Ready-to-use prompt templates for code generation, debugging, security audits, documentation, system design, CI/CD, and more. Works with GPT-4, Claude, Gemini.</div>
+      <ul class="features">
+        <li>Code generation templates</li>
+        <li>Debugging & analysis prompts</li>
+        <li>Security audit frameworks</li>
+        <li>System design prompts</li>
+        <li>Meta-prompting techniques</li>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <div class="price">$5</div>
+      <a class="buy-btn gumroad-button" href="https://devtoolsmarket.gumroad.com/l/prompt-pack" data-gumroad-overlay-checkout="true">Get It →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bundle -->
+<div class="bundle">
+  <div class="bundle-card">
+    <h2>🎁 Complete Developer Bundle</h2>
+    <p>Get all 3 products in one download — and save 40%</p>
+    <div class="bundle-price">
+      <span class="original" style="text-decoration:line-through;color:var(--muted);font-size:1rem">$11</span>
+      $7
+      <span class="save">Save $4 with the bundle</span>
+    </div>
+    <a class="buy-btn gumroad-button" href="https://devtoolsmarket.gumroad.com/l/dev-bundle" data-gumroad-overlay-checkout="true" style="font-size:1.1rem;padding:.8rem 2rem">Get the Bundle →</a>
+  </div>
+</div>
+
+<!-- Free Preview -->
+<div class="preview-section">
+  <h2>📖 Free Preview — What's Inside</h2>
+  <div class="preview-grid">
+    <div class="preview-item">
+      <h4>From: Git Power User Cheatsheet</h4>
+      <pre>
+Undo last commit (keep changes)
+$ git reset --soft HEAD~1
+
+Recover deleted branch
+$ git reflog | grep 'branch-name'
+$ git checkout -b branch-name HEAD@{n}
+
+Pretty log graph (alias)
+$ git config --global alias.lg \
+  "log --graph --oneline --decorate --all"
+
+Auto-resolve repeated merge conflicts
+[rerere]
+  enabled = true</pre>
+    </div>
+    <div class="preview-item">
+      <h4>From: Docker Cheatsheet</h4>
+      <pre>
+Multi-stage build (slim images)
+FROM node:20 AS builder
+RUN npm ci && npm run build
+
+FROM node:20-slim
+COPY --from=builder /app/dist ./dist
+CMD ["node", "dist/index.js"]
+
+Health check in Compose
+healthcheck:
+  test: curl -f http://localhost:3000/health
+  interval: 30s
+  retries: 3</pre>
+    </div>
+    <div class="preview-item">
+      <h4>From: Prompt Engineering Pack</h4>
+      <pre>
+📌 Security Audit Prompt
+
+Audit this code for vulnerabilities:
+```{language}
+{code}
+```
+Check for:
+- Injection (SQL, XSS, command)
+- Auth/authz issues
+- OWASP Top 10 violations
+
+For each finding:
+- Severity: Critical/High/Medium/Low
+- Attack scenario
+- Fix with code example</pre>
+    </div>
+  </div>
+</div>
+
+<!-- Social Proof -->
+<div class="social-proof">
+  <h2>Trusted by Developers</h2>
+  <div class="stats">
+    <div class="stat">
+      <div class="num">20+</div>
+      <div class="label">Free Tools Available</div>
+    </div>
+    <div class="stat">
+      <div class="num">150+</div>
+      <div class="label">Commands & Prompts</div>
+    </div>
+    <div class="stat">
+      <div class="num">$3</div>
+      <div class="label">Starting Price</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Made by <a href="https://devtoolsmarket.gumroad.com">DevTools Market</a> · <a href="index.html">Free Tools</a> · <a href="https://github.com/mellowmarshall/devtoolbox">GitHub</a></p>
+  <p style="margin-top:.5rem">© 2026 DevToolbox. All rights reserved.</p>
+</div>
+
+</body>
+</html>
